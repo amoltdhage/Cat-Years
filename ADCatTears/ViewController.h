@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
 
+
+@property (weak, nonatomic) IBOutlet UITextField *textfield;
+
+@property (weak, nonatomic) IBOutlet UILabel *labelText;
+
+
+- (IBAction)catyear:(id)sender;
+
+- (IBAction)clear:(id)sender;
 
 @end
 
